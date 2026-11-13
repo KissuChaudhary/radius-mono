@@ -1,0 +1,9 @@
+.venv/
+.venv-qa/
+__pycache__/
+upstream/
+build/
+proof/
+.claude/
+node_modules/
+media/soundtrack.wav

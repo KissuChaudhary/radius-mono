@@ -1,0 +1,10 @@
+# build
+fonttools[woff,unicode,lxml]==4.68.0
+skia-pathops==0.9.2
+brotli==1.2.1
+zopfli==0.4.3
+numpy==2.5.4
+# proofs / launch visuals (tools/)
+freetype-py==2.5.1
+uharfbuzz==0.57.0
+pillow==13.0.0

@@ -1,0 +1,5 @@
+# Radius Mono is a modified version of JetBrains Mono.
+# This file lists the copyright holders of the font software.
+
+The Radius Mono Project Authors
+JetBrains s.r.o. and the JetBrains Mono Project Authors (https://github.com/JetBrains/JetBrainsMono)
