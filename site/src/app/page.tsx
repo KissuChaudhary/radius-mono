@@ -31,7 +31,7 @@ export default function Home() {
               <h2>Round your editor.</h2>
               <p>Free forever under the SIL Open Font License. Eight weights, italics, 153 ligatures and one dial.</p>
               <div className="ctas">
-                <a className="btn primary" href={DOWNLOAD} download><DownloadIcon />Download free</a>
+                <a className="btn primary" href={DOWNLOAD}><DownloadIcon />Download free</a>
                 <a className="btn ghost" href={REPO} target="_blank" rel="noopener">Star on GitHub</a>
               </div>
             </div>

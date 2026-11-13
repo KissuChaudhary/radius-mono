@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { asset } from "@/lib/site";
 import { SoundIcon } from "./Icons";
 
 export default function Film() {
@@ -40,10 +39,10 @@ export default function Film() {
           loop
           playsInline
           preload="metadata"
-          poster={asset("/poster.jpg")}
+          poster="/poster.jpg"
           aria-label="Radius Mono launch film: the name rounds from sharp to round, colourful glyphs change weight, and a line sweeps across code to round it."
         >
-          <source src={asset("/radius-mono-launch.mp4")} type="video/mp4" />
+          <source src="/radius-mono-launch.mp4" type="video/mp4" />
         </video>
         <button className="sound" type="button" aria-pressed={sound} onClick={toggle}>
           <SoundIcon on={sound} />

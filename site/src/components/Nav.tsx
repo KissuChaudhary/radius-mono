@@ -50,7 +50,7 @@ export default function Nav() {
             <span className="gh-label">Star</span>
             {stars !== null && stars >= 10 && <span className="count">{stars.toLocaleString()}</span>}
           </a>
-          <a className="btn primary sm" href={DOWNLOAD} download>Download</a>
+          <a className="btn primary sm" href={DOWNLOAD}>Download</a>
         </div>
       </div>
     </header>

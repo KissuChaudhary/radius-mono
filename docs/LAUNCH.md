@@ -12,7 +12,7 @@ Three proof points to repeat everywhere:
 
 ## Links
 
-- Website: https://kissuchaudhary.github.io/radius-mono/
+- Website: your Vercel URL (add it to the repo's About box)
 - Repo: https://github.com/KissuChaudhary/radius-mono
 - Download: https://github.com/KissuChaudhary/radius-mono/releases/latest
 
@@ -36,7 +36,7 @@ Regenerate the film with `python tools/video.py` after any font change.
 >
 > Set your editor's roundness: "editor.fontVariations": "'ROND' 60"
 >
-> Free, OFL. kissuchaudhary.github.io/radius-mono
+> Free, OFL. [site link]
 
 Attach `media/radius-mono-launch.mp4`. Reply thread:
 

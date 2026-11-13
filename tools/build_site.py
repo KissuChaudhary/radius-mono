@@ -2,7 +2,7 @@
 Prepare assets for the Next.js site in site/.
 
     python tools/build_site.py             # everything (needs requirements.txt)
-    python tools/build_site.py --zip-only  # just the download zip (stdlib only; used in CI)
+    python tools/build_site.py --zip-only  # just the release zip (stdlib only)
 
 Writes
   site/src/app/fonts/*.woff2      variable webfonts for next/font/local
@@ -10,7 +10,7 @@ Writes
   site/src/data/glyphs.json       character-set browser data
   site/src/data/release.json      version + zip name/size shown on the page
   site/public/{og.png,poster.jpg,radius-mono-launch.mp4}
-  site/public/download/RadiusMono-<version>.zip   (git-ignored; CI rebuilds it)
+  build/release/RadiusMono-<version>.zip          upload this to the GitHub release
 """
 import argparse
 import json
@@ -33,7 +33,7 @@ def human(n):
 
 
 def make_zip():
-    out = SITE / "public" / "download" / ZIP_NAME
+    out = ROOT / "build" / "release" / ZIP_NAME
     out.parent.mkdir(parents=True, exist_ok=True)
     with zipfile.ZipFile(out, "w", zipfile.ZIP_DEFLATED, compresslevel=9) as z:
         for sub in ("variable", "ttf", "webfonts"):

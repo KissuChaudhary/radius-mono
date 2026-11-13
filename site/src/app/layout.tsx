@@ -1,7 +1,10 @@
 import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
-import { DESCRIPTION, REPO, SITE_URL, TITLE } from "@/lib/site";
+import { DESCRIPTION, REPO, TITLE } from "@/lib/site";
 import "./globals.css";
+
+// Set in next.config.ts from Vercel's production domain (or NEXT_PUBLIC_SITE_URL).
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
 
 const radius = localFont({
   src: [
@@ -17,7 +20,7 @@ const radius = localFont({
 const ogTitle = `${TITLE}: JetBrains Mono, with a border-radius`;
 
 export const metadata: Metadata = {
-  metadataBase: new URL(SITE_URL),
+  metadataBase: new URL(SITE_URL.endsWith("/") ? SITE_URL : `${SITE_URL}/`),
   title: { absolute: `${TITLE}: the coding font with a roundness axis` },
   description: DESCRIPTION,
   alternates: { canonical: "./" },

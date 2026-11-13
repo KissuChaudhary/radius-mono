@@ -108,7 +108,7 @@ export default function Install() {
             <span className="num">1</span>
             <h3>Download</h3>
             <p>One zip with the variable fonts, 16 static fonts and webfonts.</p>
-            <div><a className="btn primary sm" href={DOWNLOAD} download>Download Radius Mono</a></div>
+            <div><a className="btn primary sm" href={DOWNLOAD}>Download Radius Mono</a></div>
             <span className="files">{ZIP_NAME} · {ZIP_SIZE}</span>
           </div>
           <div className="plate step">

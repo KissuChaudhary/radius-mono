@@ -6,16 +6,13 @@ export const ZIP_SIZE = release.zipSize;
 
 export const REPO = "https://github.com/KissuChaudhary/radius-mono";
 export const REPO_SLUG = "KissuChaudhary/radius-mono";
-export const SITE_URL = "https://kissuchaudhary.github.io/radius-mono/";
+
+/** Direct download of the release zip, served by GitHub on any host. */
+export const DOWNLOAD = `${REPO}/releases/download/v${VERSION}/${ZIP_NAME}`;
 
 export const TITLE = "Radius Mono";
 export const DESCRIPTION =
   "Radius Mono is a free, open-source coding font: JetBrains Mono with a roundness axis from crisp (0) to fully round (100), in 8 weights with italics and 153 ligatures.";
-
-/** Public assets need the GitHub Pages prefix added by hand (next/font handles its own). */
-const BASE = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
-export const asset = (path: string) => `${BASE}${path}`;
-export const DOWNLOAD = asset(`/download/${ZIP_NAME}`);
 
 /** Syntax-highlighted sample for the before / after editor. */
 export type Token = [cls: "k" | "s" | "n" | "c" | "f" | "t" | null, text: string];

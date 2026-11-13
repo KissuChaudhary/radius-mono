@@ -52,7 +52,7 @@ export default function Hero() {
         without moving a single character.
       </p>
       <div className="ctas">
-        <a className="btn primary" href={DOWNLOAD} download><DownloadIcon />Download free</a>
+        <a className="btn primary" href={DOWNLOAD}><DownloadIcon />Download free</a>
         <a className="btn ghost" href="#playground">Try it live</a>
       </div>
       <ul className="trust" aria-label="What you get">

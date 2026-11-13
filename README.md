@@ -4,7 +4,7 @@
 
 **JetBrains Mono, with a border-radius.**
 
-[Website](https://kissuchaudhary.github.io/radius-mono/) · [Download](https://github.com/KissuChaudhary/radius-mono/releases/latest) · [Launch film](media/radius-mono-launch.mp4)
+[Download](https://github.com/KissuChaudhary/radius-mono/releases/latest) · [Launch film](media/radius-mono-launch.mp4)
 
 Radius Mono is an open-source coding font with a continuous **Roundness** axis. Slide `ROND` from `0` (JetBrains Mono's crisp corners) to `100` (fully rounded, as if drawn with a round pen) at any weight from Thin to ExtraBold, upright and italic. Metrics, spacing, ligatures and OpenType features are identical to JetBrains Mono, so switching never reflows your code.
 
@@ -100,7 +100,7 @@ Outputs go to `fonts/variable`, `fonts/webfonts` and `fonts/ttf`. The upstream r
 The site in [`site/`](site/) is a Next.js app exported as static files and deployed to GitHub Pages by [`.github/workflows/pages.yml`](.github/workflows/pages.yml) on every push to `main`.
 
 ```bash
-python tools/build_site.py      # copies fonts, film, poster, OG image and the download zip into site/
+python tools/build_site.py      # copies fonts, film, poster, OG image and glyph data into site/; zip into build/release/
 cd site && npm install && npm run dev
 ```
 
